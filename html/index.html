@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css" type="text/css">
+    <script src="nui://game/ui/jquery.js" type="text/javascript"></script>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+    <script src="https://unpkg.com/phosphor-icons"></script>
+    <title>LOST-darkmarket</title>
+</head>
+<body>
+    <div id="container">
+        <div class="flex flex-col gap-3 w-full">
+            <h1 class="text-3xl text-white font-semibold">تصنيع</h1>
+            <div class="w-full flex gap-2 items-center justify-end">
+                <div class="flex gap-3 items-center">
+                    <button class="px-2 py-1 border border-gray-500 bg-gray-600 flex items-center justify-center hover:cursor-pointer hover:bg-gray-800" id="inc-button">
+                        <i class="ph-plus-bold"></i>
+                    </button>
+                    <input type="text" value="1" id='counter' class="px-2 py-1 border border-gray-500 bg-gray-600 flex items-center justify-center" />
+                    <button class="px-2 py-1 border border-gray-500 bg-gray-600 flex items-center justify-center hover:cursor-pointer hover:bg-gray-800" id="dec-button">
+                        <i class="ph-minus-bold"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="items" class="grid grid-cols-3 items-start justify-center gap-3 mt-4">
+
+        </div>
+    </div>
+    <script src="./script.js" type="text/javascript" defer></script>
+</body>
+</html>
